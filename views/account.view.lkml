@@ -207,7 +207,7 @@ view: account {
   ### Acount Details ###
 
   dimension: account_name {
-    label: "Account Name"
+    label: "Bank Name"
     type: string
     sql: ${TABLE}.NAME;;
     link:{

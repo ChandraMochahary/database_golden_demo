@@ -2,7 +2,7 @@ view: account {
   sql_table_name: crm.account;;
   drill_fields: [id]
 
-  #### Primary Key ###
+  #### Primary Key ####
 
   dimension: id {
     #hidden: yes

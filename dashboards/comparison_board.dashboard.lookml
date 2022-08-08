@@ -180,11 +180,10 @@
       event_sessions.count:
         is_active: true
         palette:
-          palette_id: 1d1ac5f1-c84b-75d7-d2ae-8a0fa0fa6d74
+          palette_id: 0cbdcd82-57e8-5089-2e48-deeaf62f3f1f
           collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
           custom_colors:
-          - "#34A853"
-          - "#ffffff"
+          - "#f4ffe9"
           - "#7CB342"
     custom_color_enabled: true
     show_single_value_title: true

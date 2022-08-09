@@ -1,4 +1,4 @@
-connection: "database_golden_demo_onprem"
+connection: "database_golden_demo_alloy_8"
 
 include: "/views/*.view.lkml"
 

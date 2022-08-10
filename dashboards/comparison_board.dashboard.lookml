@@ -1,5 +1,5 @@
-- dashboard: join_queries_copy
-  title: Join Queries (copy)
+- dashboard: portfolio_manager
+  title: Portfolio Manager
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -38,14 +38,14 @@
     col: 0
     width: 12
     height: 6
-  - title: New Tile
-    name: New Tile
+  - title: Total Transactions
+    name: Total Transactions
     model: lux_cc_next
     explore: event_logs
     type: single_value
     fields: [event_sessions.count]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
       event_sessions.session_start_date: 2021/07/01 to 2021/07/31
       account.account_name: a%,b%,c%,d%,e%
@@ -61,7 +61,7 @@
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
     custom_color: "#34A853"
-    single_value_title: Total Sessions
+    single_value_title: Total Transactions
     defaults_version: 1
     series_types: {}
     x_axis_gridlines: false
@@ -95,7 +95,7 @@
     row: 6
     col: 12
     width: 6
-    height: 3
+    height: 4
   - name: " (4)"
     type: text
     title_text: ''
@@ -111,14 +111,14 @@
     col: 12
     width: 12
     height: 6
-  - title: New Tile
-    name: New Tile (2)
+  - title: Number of Clients
+    name: Number of Clients
     model: lux_cc_next
     explore: event_logs
     type: single_value
     fields: [event_logs.user_count]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
       event_sessions.session_start_date: 2021/07/01 to 2021/07/31
       account.account_name: a%,b%,c%,d%,e%
@@ -139,7 +139,7 @@
     row: 6
     col: 18
     width: 6
-    height: 3
+    height: 4
   - title: Top Accounts
     name: Top Accounts
     model: lux_cc_next
@@ -147,7 +147,7 @@
     type: looker_grid
     fields: [event_sessions.count, account.account_name]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
       event_sessions.session_start_date: 2021/07/01 to 2021/07/31
       account.account_name: a%,b%,c%,d%,e%
@@ -219,18 +219,18 @@
     show_silhouette: false
     totals_color: "#808080"
     listen: {}
-    row: 9
+    row: 10
     col: 18
     width: 6
-    height: 6
-  - title: Sessions by Industry
-    name: Sessions by Industry
+    height: 5
+  - title: Transactions by Industry
+    name: Transactions by Industry
     model: lux_cc_next
     explore: event_logs
     type: looker_bar
     fields: [event_sessions.count, account.industry]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
       event_sessions.session_start_date: 2021/07/01 to 2021/07/31
       account.account_name: a%,b%,c%,d%,e%
@@ -282,20 +282,20 @@
     conditional_formatting_include_nulls: false
     defaults_version: 1
     listen: {}
-    row: 9
+    row: 10
     col: 12
     width: 6
-    height: 6
-  - title: Total Sessions
-    name: Total Sessions
+    height: 5
+  - title: Total Transactions
+    name: Total Transactions (2)
     model: lux_next
     explore: event_logs
     type: single_value
     fields: [event_sessions.count]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -342,17 +342,17 @@
     row: 6
     col: 0
     width: 6
-    height: 3
-  - title: Number of Users
-    name: Number of Users
+    height: 4
+  - title: Number of Clients
+    name: Number of Clients (2)
     model: lux_next
     explore: event_logs
     type: single_value
     fields: [event_logs.user_count]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -371,17 +371,17 @@
     row: 6
     col: 6
     width: 6
-    height: 3
-  - title: Sessions by Industry
-    name: Sessions by Industry (2)
+    height: 4
+  - title: Transactions by Industry
+    name: Transactions by Industry (2)
     model: lux_next
     explore: event_logs
     type: looker_bar
     fields: [event_sessions.count, account.industry]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500
@@ -429,10 +429,10 @@
     conditional_formatting_include_nulls: false
     defaults_version: 1
     listen: {}
-    row: 9
-    col: 6
+    row: 10
+    col: 0
     width: 6
-    height: 6
+    height: 5
   - title: Top Accounts
     name: Top Accounts (2)
     model: lux_next
@@ -440,9 +440,9 @@
     type: looker_grid
     fields: [event_sessions.count, account.account_name]
     filters:
-      event_logs.timestamp_date: 2021/07/01 to 2021/07/31
+      event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500
@@ -502,7 +502,7 @@
     show_silhouette: false
     totals_color: "#808080"
     listen: {}
-    row: 9
-    col: 0
+    row: 10
+    col: 6
     width: 6
-    height: 6
+    height: 5

@@ -47,7 +47,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -120,7 +120,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -149,7 +149,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500
@@ -232,7 +232,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/31
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500
@@ -295,7 +295,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -352,7 +352,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     limit: 500
     filter_expression: "${event_logs.client_id}=${client.id} AND ${event_sessions.client_id}=${client.id} "
@@ -381,7 +381,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500
@@ -442,7 +442,7 @@
     filters:
       event_logs.timestamp_date: 2021/07/01 to 2021/07/08
       event_logs.sequence: "<100"
-      event_sessions.session_start_date: 2021/07/01 to 2021/07/10
+      event_sessions.session_start_date: 2021/07/01 to 2021/07/08
       account.account_name: a%,b%,c%,d%,e%
     sorts: [event_sessions.count desc]
     limit: 500

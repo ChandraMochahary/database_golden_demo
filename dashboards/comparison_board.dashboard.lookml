@@ -457,9 +457,6 @@
     table_theme: white
     limit_displayed_rows: false
     enable_conditional_formatting: false
-    color_application:
-      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
-      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
     header_text_alignment: left
     header_font_size: '12'
     rows_font_size: '12'
@@ -471,12 +468,6 @@
     series_cell_visualizations:
       event_sessions.count:
         is_active: true
-        palette:
-          palette_id: 0cbdcd82-57e8-5089-2e48-deeaf62f3f1f
-          collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
-          custom_colors:
-          - "#FFFFFF"
-          - "#4284F3"
     custom_color_enabled: true
     show_single_value_title: true
     show_comparison: false

@@ -1,6 +1,6 @@
 connection: "database_golden_demo_alloy"
 
-
+include: "/dashboards/*.dashboard.lookml"
 include: "/views/*.view.lkml"
 
 

@@ -1,5 +1,5 @@
 connection: "database_golden_demo_onprem"
-include: "/dashboards/**/*.dashboard.lookml"
+include: "/dashboards/*.dashboard.lookml"
 include: "/views/*.view.lkml"
 
 

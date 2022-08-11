@@ -2,7 +2,7 @@ view: account {
   sql_table_name: crm.account;;
   drill_fields: [id]
 
-  #### Primary Key ###
+  #### Primary Key ####
 
   dimension: id {
     #hidden: yes
@@ -207,7 +207,7 @@ view: account {
   ### Acount Details ###
 
   dimension: account_name {
-    label: "Account Name"
+    label: "Bank Name"
     type: string
     sql: ${TABLE}.NAME;;
     link:{

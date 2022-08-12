@@ -4,7 +4,6 @@ include: "/views/*.view.lkml"
 
 persist_for: "0 seconds"
 
-
 explore: opportunity_line_item {
   label: "Lux - Opportunities"
   description: "Use this explore for looking at data related to Salesforce Opportunities, Accounts and Sales Representatives"

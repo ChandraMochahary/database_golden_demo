@@ -25,23 +25,12 @@
     height: 14
   - name: " (3)"
     type: text
-    title_text: ''
-    subtitle_text: ''
-    body_text: "<!-- verbose inline css award winner 2020 -->\n<div style=\"margin:\
-      \ auto; \">\n<a style=\"\n\tcolor: #fff;\n     background-color: #4285F4;\n\
-      \    border-color: #4285F4;\n    float: center;\n    font-weight: 800;\n   \
-      \ text-align: center;\n    vertical-align: middle;\n    cursor: pointer;\n \
-      \   user-select: none;\n    padding: 40px;\n    padding-left:20%;\n    padding-right:20%;\n\
-      \    margin-left: 22%;\n    margin-right: 10%;\n    font-size: 2rem;\n    line-height:\
-      \ 5;\n    border-radius: 5px;\"\n   >\n   AlloyDB\n</a>\n<b style=\"\n\tcolor:\
-      \ #4285F4;\n    float: center;\n    font-weight: 400;\n    text-align: center;\n\
-      \    vertical-align: middle;\n    cursor: pointer;\n    user-select: none;\n\
-      \    font-size: 24px;\n    line-height: 2;\n    border-radius: 1px;\"\n   >\n\
-      \   <center>Records Read: 61,701,550</center>\n</b>\n</div>"
+    title_text: 'Alloy DB'
+    subtitle_text: 'Records Read: 61,701,550'
     row: 0
     col: 0
     width: 12
-    height: 6
+    height: 3
   - title: Total Transactions
     name: Total Transactions
     model: lux_cc_next
@@ -102,23 +91,12 @@
     height: 4
   - name: " (4)"
     type: text
-    title_text: ''
-    subtitle_text: ''
-    body_text: "<!-- verbose inline css award winner 2020 -->\n<div style=\"margin:\
-      \ auto; \">\n<a style=\"\n\tcolor: #fff;\n     background-color: #34A853;\n\
-      \    border-color: #34A853;\n    float: center;\n    font-weight: 800;\n   \
-      \ text-align: center;\n    vertical-align: middle;\n    cursor: pointer;\n \
-      \   user-select: none;\n    padding: 40px;\n    padding-left:20%;\n    padding-right:20%;\n\
-      \    margin-left: 22%;\n    margin-right: 10%;\n    font-size: 2rem;\n    line-height:\
-      \ 5;\n    border-radius: 5px;\"\n   >\n   Postgres\n</a>\n\n<b style=\"\n\t\
-      color: #34A853;\n    float: center;\n    font-weight: 400;\n    text-align:\
-      \ center;\n    vertical-align: middle;\n    cursor: pointer;\n    user-select:\
-      \ none;\n    font-size: 24px;\n    line-height: 2;\n    border-radius: 1px;\"\
-      \n   >\n   <center>Records Read: 61,701,550</center>\n</b>\n</div>"
+    title_text: 'PostgresSQL'
+    subtitle_text: 'Records Read: 61,701,550'
     row: 0
     col: 12
     width: 12
-    height: 6
+    height: 3
   - title: Number of Clients
     name: Number of Clients
     model: lux_cc_next

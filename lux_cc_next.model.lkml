@@ -1,7 +1,7 @@
 connection: "database_golden_demo_onprem"
 
 include: "/views/*.view.lkml"
-
+persist_for: "0 seconds"
 
 explore: opportunity_line_item {
   label: "Lux - Opportunities"

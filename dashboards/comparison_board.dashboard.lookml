@@ -25,7 +25,7 @@
     height: 14
   - name: " (3)"
     type: text
-    title_text: 'Alloy DB'
+    title_text: 'AlloyDB'
     subtitle_text: 'Records Read: 61,701,550'
     row: 0
     col: 0
@@ -91,7 +91,7 @@
     height: 4
   - name: " (4)"
     type: text
-    title_text: 'PostgresSQL'
+    title_text: 'PostgreSQL'
     subtitle_text: 'Records Read: 61,701,550'
     row: 0
     col: 12

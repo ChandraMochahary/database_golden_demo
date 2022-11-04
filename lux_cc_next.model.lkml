@@ -93,5 +93,6 @@ explore: event_logs {
     relationship: many_to_one
     view_label: "Account"
     sql_on: ${client.salesforce_account_id} = ${account.id} ;;
+
   }
 }
